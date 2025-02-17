@@ -1,0 +1,9 @@
+# docker-compose.yml
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: coursera-spring-hello-world-app
+    ports:
+      - "80:80" # Map the chosen port to port 80 on the host
